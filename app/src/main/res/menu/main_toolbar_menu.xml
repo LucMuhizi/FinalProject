@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item0"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        android:orderInCategory="25"
+        app:showAsAction="always"  />
+
+    <item android:id="@+id/item1"
+        android:title="@string/mainTicket"
+        android:icon="@drawable/ticket"
+        android:orderInCategory="50"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/help_id"
+        android:title="@string/how_to_search"
+        android:icon="@drawable/help"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+
+</menu>

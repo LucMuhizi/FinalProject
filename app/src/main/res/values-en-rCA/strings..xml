@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CST2335_finalProject</string>
+    <string name="searchMsg">Input a City Name and Radius to search</string>
+    <string name="searchHint1">Input the City Name</string>
+    <string name="searchHint2">search radius by KM</string>
+    <string name="pgMsg">My Favorite Events: </string>
+    <string name="searchBt">Search</string>
+    <string name="cancelBt">Cancel </string>
+    <string name="favoriteBt">Add to My Favorite </string>
+    <string name="snb_undo">UNDO</string>
+
+    <string name="mainTicket">TICKET MASTER</string>
+    <string name="welcome_to">WELCOME TO Luc Final PROJECT</string>
+    <string name="tm_version_1">TicketMaster event search_1.0</string>
+    <string name="author">Luc Muhizi</string>
+    <string name="home">home</string>
+    <string name="help">To search ticketing information, please enter city name and the radius</string>
+    <string name="ticket_search_version_1">Ticket_search_version_1</string>
+    <string name="saved_favorites">Saved to Favourites?</string>
+    <string name="how_to_search">How to search</string>
+    <string name="save_to_favourite">save to favourite</string>
+    <string name="close">Close</string>
+    <string name="deleted_favorite">Item was deleted</string>
+    <string name="want_delete">Want to delete?</string>
+
+    <string name="fragTagName">Event Name:  </string>
+    <string name="fragTagPrice">The Price of Ticket is from  </string>
+    <string name="fragTagDate">Event Start Date is:  </string>
+    <string name="fragTagLike">Details Information at:  </string>
+
+</resources>

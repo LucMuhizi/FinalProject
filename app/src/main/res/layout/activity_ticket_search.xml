@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearId"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ticketToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/main_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+        <!-- THIS IS WHAT VISIBLE ON THE SCREEN-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/appAccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/searchMsg"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"      />
+
+            <EditText
+                android:id="@+id/cityInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:inputType="textPersonName"
+                android:hint="@string/searchHint1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/searchRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:ems="10"
+                android:hint="@string/searchHint2"
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/searchBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/searchBt"
+                android:layout_marginTop="16dp"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:id="@+id/pgbar"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="21dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/cancelBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelBt"
+                android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/pgMSg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pgMsg"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <ListView
+                android:id="@+id/FavoriteList"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"/>
+
+
+
+        </LinearLayout>
+
+        <!-- THIS IS WHAT IS WHAT POPS OUT FROM THE SIDE:-->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/main_nav_header_layout"
+            app:menu="@menu/main_toolbar_menu" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
